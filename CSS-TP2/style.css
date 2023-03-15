@@ -1,0 +1,31 @@
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+a{
+    color: pink;
+}
+
+a:hover{
+    font-size: 1.5rem;
+    color: yellow;
+}
+
+a:visited{
+    color: deeppink;
+}
+
+p:hover{
+    background-color: red;
+}
+
+p:first-letter{
+    font-size: 1.8rem;
+}
+
+p::selection {
+    background-color: yellow;
+}
