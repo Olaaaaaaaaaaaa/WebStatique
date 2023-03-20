@@ -17,3 +17,22 @@ body {
         2px 4px 8px 0px rgba(0, 255, 255, 0.7),
         2px 4px 16px 0px rgba(0, 255, 255, 0.7);
 }
+
+.boxOverflow {
+    width: 500px;
+    overflow: hidden;
+}
+
+.boxOverflow>img {
+
+    width: 700px;
+}
+
+.floatRight {
+    height: 700px
+}
+
+.floatRight img {
+    float: right;
+    height: 100px;
+}

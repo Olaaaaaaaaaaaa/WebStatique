@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: cornflowerblue;
+}
+
+.block {
+    display: flex;
+    width: 100%;
+}
+
+.subBlock {
+    width: 50%;
+}
+
+img {
+    height: 100px;
+    margin: 3px 12px 3px 0px;
+}
+
+.floatRight {
+    float: right;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.blockCenter {}
+
+.center {
+    margin: auto;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.test {
+    float: right;
+    position: relative;
+    bottom: 0;
+}
