@@ -1,73 +1,94 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
-header{
+
+header {
     display: flex;
     height: 400px;
     justify-content: center;
     align-items: center;
     background-image: url('media/keyboard.jpg');
 }
-h1{
+
+h1 {
     color: white;
     font-size: 4em;
     text-shadow: 2px 2px black;
 }
-main{
+
+main {
     background-color: #373737;
     display: flex;
 }
-.leftScreen, .rightScreen{
+
+.leftScreen,
+.rightScreen {
     flex: 1 0 0;
 }
-.content{
+
+.content {
     flex: 3 0 0;
 }
 
-.content > ul > li{
+.content>ul>li {
     line-height: 1.5;
     list-style-type: none;
     color: white;
     font-size: 20px;
 }
-h2{
-    background-color:mediumaquamarine;
+
+h2 {
+    background-color: mediumaquamarine;
     color: white;
     height: 50px;
     align-items: center;
     display: flex;
-    padding-left:5px ;
+    padding-left: 5px;
 }
-p{
+
+p {
     color: white;
-    padding-top: 10px ;
+    padding-top: 10px;
 }
-p > a, .paragraph > a{
+
+p>a,
+.paragraph>a {
     color: mediumaquamarine;
     text-decoration: none;
 }
-.paragraph, .giveMoney{
-    padding-top: 15px ;
+
+.paragraph,
+.giveMoney {
+    padding-top: 15px;
     padding-bottom: 15px;
 }
-.paragraph > a{
+
+.paragraph>a {
     display: flex;
     justify-content: flex-end;
 }
-.picture{
+
+.picture {
     border-top: 5px solid white;
     border-bottom: 5px solid white;
 }
-.paragraph > img{
+
+.paragraph>img {
     width: 100%;
 }
-h3, .picture > p{
-    color: white;
+
+h3,
+.picture>p {
     text-align: center;
 }
-button{
+
+h3 {
+    color: white;
+}
+
+button {
     border-radius: 12px;
     border: 0px;
     color: white;
@@ -75,51 +96,94 @@ button{
     font-size: 20px;
     padding: 14px 40px;
 }
-.giveMoney{
+
+.giveMoney {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.data > p{
+.data>p {
     font-size: 20px;
     color: mediumaquamarine;
 }
-.data > p > span{
+
+span {
     color: white;
-    font-style:italic
+    font-style: italic
 }
 
-th, td {
+th,
+td {
     border: 1px solid white;
     padding: 10px 10px;
     text-align: center;
     color: #fff;
 }
 
-thead{
-    background-color: mediumaquamarine ;
+thead {
+    background-color: mediumaquamarine;
 }
-table{
-    margin-left:auto;
-    margin-right:auto
+
+table {
+    margin-left: auto;
+    margin-right: auto
 }
-footer{
+
+footer {
     background-color: gray;
     height: 150px;
     border-top: solid white;
 }
-footer{
+
+footer {
     display: flex;
     align-items: center;
 }
 
 
 
-footer .content > ul > li{
+footer .content>ul>li {
     list-style-type: none;
     color: mediumaquamarine;
     font-size: 15px;
     display: inline;
     padding-right: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        background-color: white;
+        display: flex;
+    }
+
+    p,
+    h2,
+    a,
+    h3,
+    span,
+    th,
+    td {
+        color: #373737;
+    }
+
+    h1 {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    header {
+        align-items: flex-start;
+        height: 200px;
+    }
+
+    .leftScreen,
+    .rightScreen {
+        flex: 0 0 0;
+    }
+
+    .data>p {
+        text-align: center;
+    }
 }
